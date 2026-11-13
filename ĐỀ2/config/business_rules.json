@@ -1,0 +1,56 @@
+{
+  "system_name": "NamViet AI Lead Dispatcher",
+  "version": "2.0.0",
+  "company": {
+    "name": "Công ty Cổ phần Phần mềm Nam Việt",
+    "short_name": "Nam Việt",
+    "industry": "Phần mềm quản lý cho doanh nghiệp vừa và nhỏ (SME)",
+    "support_hotline": "1900-6868",
+    "email": "contact@namviet-software.vn"
+  },
+  "deduplication": {
+    "phone_normalization": {
+      "country_code": "84",
+      "remove_chars": [" ", "-", ".", "(", ")", "+"]
+    },
+    "public_email_domains": [
+      "gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "icloud.com", "mail.com"
+    ],
+    "company_name_clean_patterns": [
+      "công ty cổ phần", "công ty cp", "cty cp", "ctcp",
+      "công ty tnhh mtv", "công ty tnhh", "cty tnhh", "tnhh",
+      "tập đoàn", "doanh nghiệp tư nhân", "dntn", "co., ltd", "ltd", "corp", "corporation", "jsc"
+    ],
+    "similarity_threshold": 0.85
+  },
+  "scoring": {
+    "weights": {
+      "product_fit": 40,
+      "budget_alignment": 30,
+      "authority_and_timeline": 20,
+      "data_completeness": 10
+    },
+    "thresholds": {
+      "p1_hot": 75,
+      "p2_warm": 50,
+      "p3_cold": 30
+    }
+  },
+  "escalation": {
+    "high_budget_unclear_threshold": 200000000,
+    "require_manager_approval": [
+      "NO_MATCHING_SALES_REP",
+      "HIGH_BUDGET_UNCLEAR_REQUIREMENTS",
+      "MULTI_REGION_ENTERPRISE",
+      "PREVIOUS_COMPLAINT_HISTORY",
+      "OUT_OF_SCOPE_POTENTIAL_CUSTOM"
+    ]
+  },
+  "sla_hours": {
+    "P1": 2,
+    "P2": 8,
+    "P3": 24,
+    "Escalated": 4
+  }
+}
+

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo Cáo Đồ Án AI301: AI Agent Sàng Lọc & Điều Phối Khách Hàng - Nam Việt Software</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --primary: #f472b6;
+      --accent: #fb7185;
+      --accent-light: #fce7f3;
+      --success: #34d399;
+      --danger: #f87171;
+      --warning: #fbbf24;
+      --dark: #181116;
+      --card-bg: rgba(35, 23, 32, 0.75);
+      --card-border: rgba(244, 114, 182, 0.2);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background: #150f14; color: #fff; overflow: hidden; height: 100vh; display: flex; flex-direction: column; }
+    
+    .presentation-container {
+      flex: 1; position: relative; width: 100%; height: 100%; overflow: hidden;
+    }
+    .slide {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 50px 80px;
+      display: flex; flex-direction: column; justify-content: center;
+      opacity: 0; visibility: hidden; transition: all 0.4s ease; transform: scale(0.96);
+    }
+    .slide.active {
+      opacity: 1; visibility: visible; transform: scale(1);
+    }
+    
+    /* Slide Components */
+    .slide-badge {
+      display: inline-block; background: rgba(244, 114, 182, 0.15); border: 1px solid var(--primary);
+      color: #fbcfe8; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; width: fit-content;
+    }
+    h1.title { font-size: 46px; font-weight: 800; line-height: 1.2; margin-bottom: 20px; background: linear-gradient(135deg, #ffffff 0%, #fbcfe8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    h2.subtitle { font-size: 26px; color: #f472b6; font-weight: 400; margin-bottom: 35px; opacity: 0.9; }
+    
+    .slide-header { margin-bottom: 30px; }
+    .slide-title { font-size: 34px; font-weight: 700; color: white; display: flex; align-items: center; gap: 12px; }
+    .slide-desc { font-size: 16px; color: #94a3b8; margin-top: 6px; }
+
+    /* Grid Layouts */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 24px;
+      backdrop-filter: blur(8px); transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover { border-color: var(--primary); transform: translateY(-3px); }
+    .card-title { font-size: 18px; font-weight: 700; color: #f472b6; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .card-body { font-size: 14px; color: #cbd5e1; line-height: 1.6; }
+    .card-body ul { padding-left: 18px; margin-top: 8px; }
+    .card-body li { margin-bottom: 6px; }
+
+    .highlight-box {
+      background: rgba(244, 114, 182, 0.1); border-left: 4px solid var(--primary); padding: 14px 18px; border-radius: 0 10px 10px 0; margin-top: 15px; font-size: 13.5px; color: #fbcfe8;
+    }
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1); border-left: 4px solid var(--danger); padding: 14px 18px; border-radius: 0 10px 10px 0; margin-top: 15px; font-size: 13.5px; color: #fca5a5;
+    }
+
+    /* Comparison Table */
+    table.slide-table {
+      width: 100%; border-collapse: collapse; font-size: 14px; background: rgba(30, 20, 28, 0.6); border-radius: 12px; overflow: hidden;
+    }
+    table.slide-table th { background: rgba(24, 15, 22, 0.85); color: #fbcfe8; padding: 12px 16px; text-align: left; }
+    table.slide-table td { padding: 12px 16px; border-top: 1px solid rgba(244, 114, 182, 0.15); color: #e2e8f0; }
+
+    /* Footer Controls */
+    footer {
+      background: rgba(24, 15, 22, 0.95); border-top: 1px solid rgba(244, 114, 182, 0.2); padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center; z-index: 100;
+    }
+    .footer-left { font-size: 13px; color: #94a3b8; }
+    .footer-controls { display: flex; align-items: center; gap: 12px; }
+    .nav-btn {
+      background: #231720; color: white; border: 1px solid rgba(244, 114, 182, 0.3); padding: 8px 16px; border-radius: 8px;
+      font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s;
+    }
+    .nav-btn:hover { background: var(--primary); }
+    .slide-counter { font-size: 13px; color: #fbcfe8; font-weight: 600; min-width: 60px; text-align: center; }
+
+    .btn-demo {
+      background: linear-gradient(135deg, #f472b6 0%, #fb7185 100%); color: white; border: none; padding: 8px 18px; border-radius: 8px;
+      font-size: 13px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(244, 114, 182, 0.3);
+    }
+      background: var(--success); color: white; border: none; padding: 8px 18px; border-radius: 8px;
+      font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="presentation-container">
+
+  <!-- SLIDE 1: COVER -->
+  <div class="slide active">
+    <div class="slide-badge">ĐỒ ÁN HỌC PHẦN AI301 • ĐỀ SỐ 02</div>
+    <h1 class="title">HỆ THỐNG AI AGENT SÀNG LỌC & ĐIỀU PHỐI<br>KHÁCH HÀNG TIỀM NĂNG</h1>
+    <h2 class="subtitle">Doanh nghiệp giả định: Công ty Cổ phần Phần mềm Nam Việt (Grow Together)</h2>
+    <div class="grid-3" style="max-width: 900px;">
+      <div class="card">
+        <div class="card-title">🎯 Bài toán</div>
+        <div class="card-body">700 leads/tuần từ Web, Hội thảo, Ads. Trùng lặp tên tắt, 2 sales cùng gọi 1 khách, cherry-picking sai lệch.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🤖 Giải pháp</div>
+        <div class="card-body">Kiến trúc AI Agent đa kỹ năng: Khử trùng lặp O(1), Chấm điểm minh bạch, Điều phối 8 NVKD & Human-in-the-loop.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">⚡ Hiệu năng</div>
+        <div class="card-body">Xử lý 700 leads trong dưới 2 giây, triệt tiêu 100% xung đột nội bộ, xuất Audit Trail và Dashboard trực quan.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: AS-IS ANALYSIS -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-badge">TASK 1 • HIỆN TRẠNG</div>
+      <div class="slide-title">1. Phân Tích Quy Trình Hiện Tại & 4 Vấn Đề Cốt Lõi</div>
+      <div class="slide-desc">Hệ quả nghiêm trọng của việc xử lý thủ công đối với hoạt động kinh doanh Nam Việt</div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title" style="color:#ef4444;">❌ Vấn Đề 1: Xung Đột Gọi Trùng (Duplicate Calling)</div>
+        <div class="card-body">
+          <b>Nguyên nhân:</b> Cùng 1 doanh nghiệp nhưng nhiều người đăng ký ở các kênh khác nhau, dùng tên viết tắt (Nam Long vs NL Corp) hoặc SĐT khác.<br>
+          <b>Hậu quả:</b> Hai NVKD cùng gọi cho 1 khách hàng; khách phàn nàn làm phiền; tranh chấp nội bộ; lãng phí 30-40% thời gian gọi.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color:#f59e0b;">❌ Vấn Đề 2: Chấm Điểm Sai Lệch (Cherry-Picking)</div>
+        <div class="card-body">
+          <b>Nguyên nhân:</b> NVKD chỉ chăm chăm chọn hồ sơ ngân sách lớn (vài tỷ) mà không đối chiếu nội dung nhu cầu có khớp sản phẩm công ty.<br>
+          <b>Hậu quả:</b> Tốn hàng tuần họp tư vấn gia công IoT/Drone ngoài phạm vi; tỷ lệ chốt = 0%; bỏ lỡ các deal chuẩn có chu kỳ bán nhanh.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color:#38bdf8;">❌ Vấn Đề 3: Bỏ Sót Khách Tiềm Năng (False Negatives)</div>
+        <div class="card-body">
+          <b>Nguyên nhân:</b> Khách hàng bận rộn chỉ để lại tên xưởng và SĐT, chưa kịp điền ngân sách hoặc email. Sales vội kết luận là "lead rác".<br>
+          <b>Hậu quả:</b> Bỏ rơi các doanh nghiệp có nhu cầu cực kỳ phù hợp (ví dụ xưởng may 80 công nhân cần ERP); lãng phí chi phí marketing (CPA tăng).
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color:#c084fc;">❌ Vấn Đề 4: Điểm Mù Quản Trị (Management Blindspot)</div>
+        <div class="card-body">
+          <b>Nguyên nhân:</b> Trưởng phòng Kinh doanh chỉ nhận báo cáo cuối phễu khi đã ký hợp đồng. Không có nhật ký lưu vết lý do bỏ rơi lead.<br>
+          <b>Hậu quả:</b> Trưởng phòng không biết cơ hội nào bị bỏ quên; không kiểm soát được rủi ro gọi cho khách thuộc danh sách cấm liên hệ.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: TO-BE WORKFLOW -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-badge">TASK 1 • QUY TRÌNH ĐỀ XUẤT</div>
+      <div class="slide-title">2. Quy Trình Đề Xuất (To-Be Workflow) Chuẩn 6 Bước</div>
+      <div class="slide-desc">Kết hợp tự động hóa bằng AI Agent và sự kiểm soát của Con người (Human-in-the-Loop)</div>
+    </div>
+    <table class="slide-table">
+      <thead>
+        <tr>
+          <th>Bước</th>
+          <th>Đầu vào (Inputs)</th>
+          <th>Công việc xử lý (Processes)</th>
+          <th>Đầu ra (Outputs)</th>
+          <th>Trách nhiệm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>1. Tiếp Nhận</b></td>
+          <td>700 leads/tuần (Web, Hội thảo, Ads)</td>
+          <td>Làm sạch chuỗi, chuẩn hóa SĐT E.164, lọc domain công ty</td>
+          <td>Dataset Leads sạch cấu trúc</td>
+          <td>Marketing & Pipeline</td>
+        </tr>
+        <tr>
+          <td><b>2. Xử Lý AI</b></td>
+          <td>Leads sạch, 4 dòng sản phẩm chuẩn</td>
+          <td>Khử trùng lặp (Dedup), Phát hiện khoảng trống tin, Chấm điểm</td>
+          <td>Master Customers (P1, P2, P3, Out-of-Scope)</td>
+          <td><b>AI Agent (customer_segmentation)</b></td>
+        </tr>
+        <tr>
+          <td><b>3. Lịch Sử & Rủi Ro</b></td>
+          <td>Master Customers, Contact History</td>
+          <td>Lọc Blacklist DNC, Lọc khách hiện hữu, Phát hiện ngoại lệ</td>
+          <td>Hồ sơ hợp lệ / Chặn DNC / Chuyển duyệt</td>
+          <td><b>AI Agent + Business Rules</b></td>
+        </tr>
+        <tr>
+          <td><b>4. Phân Công</b></td>
+          <td>Khách hợp lệ, Ma trận 8 NVKD</td>
+          <td>Định tuyến Ngành x Vùng, Cân bằng tải, Soạn nháp Outreach</td>
+          <td>Danh sách việc cho 8 NVKD + Bản nháp email</td>
+          <td><b>AI Agent (sales_followup)</b></td>
+        </tr>
+        <tr>
+          <td><b>5. Human Check</b></td>
+          <td>Hồ sơ Escalation, Bản nháp email</td>
+          <td>Trưởng phòng duyệt ca rủi ro lớn; NVKD duyệt từ ngữ email</td>
+          <td>Quyết định phê duyệt & Thông điệp hoàn thiện</td>
+          <td><b>Trưởng phòng KD & 8 NVKD</b></td>
+        </tr>
+        <tr>
+          <td><b>6. Báo Cáo & Log</b></td>
+          <td>Toàn bộ chu trình thực thi</td>
+          <td>Thống kê không đếm lặp, Lưu Audit Trail Log, Render UI</td>
+          <td>Dashboard & Báo cáo tổng hợp số liệu</td>
+          <td><b>Audit Logger & Dashboard</b></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SLIDE 4: SYSTEM DESIGN -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-badge">TASK 1 • THIẾT KẾ HỆ THỐNG</div>
+      <div class="slide-title">3. Bản Thiết Kế Mục Tiêu – Đầu Vào – Quy Trình – Đầu Ra</div>
+      <div class="slide-desc">Kiến trúc đa kỹ năng phối hợp có kiểm toán lưu vết (Audit Trail)</div>
+    </div>
+    <div class="grid-4">
+      <div class="card">
+        <div class="card-title">🎯 MỤC TIÊU</div>
+        <div class="card-body">
+          • Tự động hóa 100% sàng lọc 700 leads/tuần.<br>
+          • 0% gọi trùng lặp khách hàng.<br>
+          • Ngăn cherry-picking ngân sách ảo.<br>
+          • Cứu cơ hội bị thiếu dữ liệu ban đầu.<br>
+          • Phân bổ cân bằng cho 8 NVKD.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📥 ĐẦU VÀO</div>
+        <div class="card-body">
+          • <code>leads_input.json</code> (700 hồ sơ).<br>
+          • <code>products.json</code> (4 dòng SP: CRM, HRM, ERP, Accounting).<br>
+          • <code>sales_team.json</code> (8 NVKD).<br>
+          • <code>contact_history.json</code> (DNC, KH hiện hữu, khiếu nại).
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">⚙️ QUY TRÌNH</div>
+        <div class="card-body">
+          • Kỹ năng 1: Khử trùng lặp O(1) + Bóc tách Gaps + Scoring 4 tiêu chí.<br>
+          • Kỹ năng 2: Đối chiếu DNC + Định tuyến Ngành x Vùng + Sinh Outreach.<br>
+          • Human Gate: Manager Escalation.<br>
+          • Audit Trail Logger.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📤 ĐẦU RA</div>
+        <div class="card-body">
+          • <code>master_customers.json/.csv</code><br>
+          • <code>sales_task_assignments.json</code><br>
+          • <code>manager_escalations.json</code><br>
+          • <code>do_not_contact.json</code><br>
+          • <code>summary_report.md</code><br>
+          • <code>audit_trail.log</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: HUMAN IN THE LOOP & QC -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-badge">TASK 1 • HUMAN-IN-THE-LOOP</div>
+      <div class="slide-title">4. Cơ Chế Con Người Kiểm Soát & Phát Hiện Sai Lệch</div>
+      <div class="slide-desc">Đảm bảo AI không bao giờ đưa ra quyết định thiếu kiểm soát đối với các hồ sơ nhạy cảm</div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title" style="color:#a78bfa;">👤 ĐIỂM KIỂM SOÁT 1: Trưởng Phòng Kinh Doanh Duyệt (Escalation)</div>
+        <div class="card-body">
+          <b>Điều kiện kích hoạt (Triggers):</b>
+          <ul>
+            <li>Ngân sách lớn (>= 200tr) nhưng yêu cầu kỹ thuật chưa rõ ràng.</li>
+            <li>Doanh nghiệp quy mô lớn đa chi nhánh cả 3 miền Bắc - Trung - Nam.</li>
+            <li>Khách hàng thuộc ngành/khu vực chưa có NVKD phụ trách trong 8 người.</li>
+            <li>Khách hàng có lịch sử khiếu nại chất lượng dịch vụ trước đó.</li>
+          </ul>
+          <div class="highlight-box">Trưởng phòng quyết định: Chỉ định Senior Sales hoặc lập tổ liên vùng.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color:#38bdf8;">👤 ĐIỂM KIỂM SOÁT 2: NVKD Duyệt Bản Nháp Trước Khi Gửi</div>
+        <div class="card-body">
+          <b>Điều kiện kích hoạt:</b> Mọi bản nháp email mời demo và bộ câu hỏi khai thác nhu cầu do AI sinh ra đều ở trạng thái <code>DRAFT</code>.<br><br>
+          <b>Quyết định của Sales:</b> Rà soát nhanh, điều chỉnh đại từ xưng hô cho ấm áp, tự nhiên trước khi bấm gửi hoặc nhấc máy gọi.
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:20px;">
+      <div class="card-title" style="color:#f59e0b;">🛡️ CÁCH PHÁT HIỆN KẾT QUẢ SAI (Quality Control Rules)</div>
+      <div class="grid-3" style="margin-top:10px;">
+        <div><b>1. Kiểm tra lọt lưới trùng lặp:</b> Quét chéo ma trận nếu cùng SĐT/Domain được giao cho 2 sales -> Khóa tác vụ và báo động đỏ.</div>
+        <div><b>2. Kiểm tra sai lệch chấm điểm:</b> Sản phẩm không khớp (`product_fit == 0`) -> Khống chế điểm <= 20, cấm xếp Hot Lead dù tiền tỷ.</div>
+        <div><b>3. Kiểm tra thiếu kênh liên hệ:</b> Thiếu cả SĐT lẫn email hợp lệ -> Cấm xếp P1, chuyển hàng đợi bổ sung kênh liên lạc.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: TASK 2 LIVE DEMO & RESULTS -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-badge">TASK 2 • KẾT QUẢ THỰC THI</div>
+      <div class="slide-title">5. Kết Quả Thực Thi Pipeline & Kiểm Thử Tự Động</div>
+      <div class="slide-desc">Bằng chứng xử lý thành công ca thông thường, thiếu dữ liệu và ranh giới quy tắc</div>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">🧪 Ca 1: Thông Thường (P1)</div>
+        <div class="card-body">
+          <b>Thời Trang Hà Nội:</b> Ngân sách 50tr, GĐ Vận hành hỏi CRM.<br>
+          • Điểm: 100/100 (P1 - Hot Lead).<br>
+          • Gán đúng: Trần Thị Bình (Bán lẻ Miền Bắc).<br>
+          • Tự động sinh email mời demo 1-1.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">🧪 Ca 2: Thiếu Dữ Liệu</div>
+        <div class="card-body">
+          <b>Xưởng May An Thịnh:</b> Thiếu ngân sách & email, nhưng cần ERP quản lý kho vải 80 công nhân.<br>
+          • Đạt 82/100đ (P1) - <b>Không bị bỏ rơi!</b><br>
+          • Gán: Nguyễn Văn An (Sản xuất Miền Bắc).<br>
+          • Tự động sinh 2 câu hỏi hỏi ngân sách & email.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">🧪 Ca 3: Ranh Giới & Ngoại Lệ</div>
+        <div class="card-body">
+          • <b>Tập đoàn Alpha (2.5 tỷ outsource Drone):</b> Xếp <code>OUT_OF_SCOPE</code>, ngăn cherry-picking!<br>
+          • <b>Nam Long / NL Corp (3 kênh):</b> Gộp thành 1 khách duy nhất, 1 sales gọi.<br>
+          • <b>Vận tải Việt Phát:</b> Chặn Do-Not-Call 100%.
+        </div>
+      </div>
+    </div>
+    <div class="highlight-box" style="margin-top:20px; font-size:15px; display:flex; justify-content:space-between; align-items:center;">
+      <span><b>Kết quả Unit Test:</b> 5 PASSED / 0 FAILED. Benchmark 700 leads hoàn tất trong dưới 2 giây.</span>
+      <a href="http://localhost:8000" target="_blank" class="btn-demo">🚀 MỞ LOCALHOST DASHBOARD</a>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: LIVE EXAM DATA INGESTION -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-badge">TASK 2 • NẠP DỮ LIỆU TẠI PHÒNG THI</div>
+      <div class="slide-title">6. Cơ Chế Nạp Dữ Liệu Thi Trực Tiếp Của Giảng Viên</div>
+      <div class="slide-desc">Tuân thủ quy định: Nhận bộ dữ liệu mới, nạp vào giải pháp và chạy trực tiếp</div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Cách 1: Nạp Trực Tiếp Qua Trình Duyệt Web (1 Click)</div>
+        <div class="card-body">
+          1. Mở trang <code>http://localhost:8000</code>.<br>
+          2. Bấm nút <b>"📂 Nạp File Mới"</b> trên thanh tiêu đề.<br>
+          3. Chọn file <code>.json</code> mới của Giảng viên.<br>
+          4. Hệ thống tải lên, chạy toàn bộ quy trình, làm mới màn hình và hiển thị ngay kết quả thống kê.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Cách 2: Nạp Qua Tham Số Dòng Lệnh CLI</div>
+        <div class="card-body">
+          Chạy lệnh trực tiếp trên terminal PowerShell/CMD:
+          <pre style="background:#0f172a;padding:10px;border-radius:6px;margin-top:8px;color:#38bdf8;font-size:12px;">.\run_python.bat main.py --leads "duong_dan_file_moi.json"</pre>
+          Toàn bộ kết quả in ra màn hình console và cập nhật file trong thư mục <code>outputs/</code> trong 2 giây.
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:20px;">
+      <div class="card-title" style="color:#10b981;">Cam kết tuyệt đối về tính toàn vẹn:</div>
+      <div class="card-body">
+        Không sửa dữ liệu test • Không gán cứng kết quả (hard-code) • Mọi quyết định đều giải trình dựa trên Rule ID lưu trong Audit Trail.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Presentation Footer -->
+<footer>
+  <div class="footer-left">
+    Nam Việt Software • AI Agent Sàng Lọc & Điều Phối Khách Hàng (AI301 - Đề 02)
+  </div>
+  <div class="footer-controls">
+    <button class="nav-btn" onclick="prevSlide()">❮ Trước</button>
+    <div class="slide-counter" id="slideCounter">1 / 7</div>
+    <button class="nav-btn" onclick="nextSlide()">Sau ❯</button>
+    <a href="http://localhost:8000" target="_blank" class="btn-demo">🖥️ Web Dashboard</a>
+  </div>
+</footer>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const counter = document.getElementById('slideCounter');
+
+  function updateSlide(index) {
+    slides.forEach((s, i) => {
+      s.classList.toggle('active', i === index);
+    });
+    counter.innerText = (index + 1) + " / " + slides.length;
+  }
+
+  function nextSlide() {
+    if (currentSlide < slides.length - 1) {
+      currentSlide++;
+      updateSlide(currentSlide);
+    }
+  }
+
+  function prevSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateSlide(currentSlide);
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") nextSlide();
+    if (e.key === "ArrowLeft" || e.key === "PageUp") prevSlide();
+  });
+</script>
+
+</body>
+</html>
+

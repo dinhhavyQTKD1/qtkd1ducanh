@@ -1,0 +1,39 @@
+[
+  {
+    "product_id": "PROD-CRM",
+    "name": "NamViet CRM Pro",
+    "category": "Quản lý Bán hàng & Chăm sóc Khách hàng",
+    "target_industry": ["Bán lẻ", "Thương mại điện tử", "Dịch vụ", "Bất động sản", "F&B"],
+    "min_budget": 15000000,
+    "max_budget": 120000000,
+    "keywords": ["crm", "khách hàng", "chăm sóc khách hàng", "bán hàng", "sale", "leads", "phễu", "telesale", "pipeline", "hóa đơn", "order"]
+  },
+  {
+    "product_id": "PROD-HRM",
+    "name": "NamViet HRM Cloud",
+    "category": "Quản trị Nhân sự & Tiền lương",
+    "target_industry": ["F&B", "Bán lẻ", "Sản xuất", "Dịch vụ", "Giáo dục", "Y tế"],
+    "min_budget": 12000000,
+    "max_budget": 90000000,
+    "keywords": ["hrm", "nhân sự", "chấm công", "tính lương", "tiền lương", "hồ sơ nhân viên", "bảo hiểm", "tuyển dụng", "kpi", "đánh giá"]
+  },
+  {
+    "product_id": "PROD-ERP",
+    "name": "NamViet ERP SMB",
+    "category": "Hệ thống Hoạch định Nguồn lực Doanh nghiệp tổng thể",
+    "target_industry": ["Sản xuất", "Xây dựng", "Logistics", "Kho bãi", "Bán buôn", "Phân phối"],
+    "min_budget": 80000000,
+    "max_budget": 450000000,
+    "keywords": ["erp", "tổng thể", "quản trị tổng thể", "sản xuất", "định mức", "kho", "tồn kho", "bom", "chuỗi cung ứng", "logistics", "xây dựng", "dự án"]
+  },
+  {
+    "product_id": "PROD-ACC",
+    "name": "NamViet Accounting Simple",
+    "category": "Phần mềm Kế toán Tài chính Doanh nghiệp",
+    "target_industry": ["Bán lẻ", "Dịch vụ", "Sản xuất", "Xây dựng", "F&B", "Logistics"],
+    "min_budget": 8000000,
+    "max_budget": 45000000,
+    "keywords": ["kế toán", "thuế", "sổ sách", "báo cáo tài chính", "hóa đơn điện tử", "thu chi", "công nợ", "ngân hàng"]
+  }
+]
+

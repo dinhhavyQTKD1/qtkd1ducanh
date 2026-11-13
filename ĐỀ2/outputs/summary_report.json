@@ -1,0 +1,145 @@
+{
+  "total_raw_leads_ingested": 20,
+  "total_master_customers_unique": 18,
+  "deduplication_reduction_rate": "10.0%",
+  "priority_breakdown_unique": {
+    "P1": 14,
+    "P2": 0,
+    "P3": 1,
+    "OUT_OF_SCOPE": 1,
+    "DO_NOT_CONTACT": 1,
+    "ACTIVE_CLIENT": 1,
+    "UNQUALIFIED": 0
+  },
+  "escalations_to_sales_manager": 5,
+  "do_not_contact_blocked": 1,
+  "existing_clients_routed_to_cskh": 1,
+  "sales_rep_workload_distribution": {
+    "Nguyễn Văn An": {
+      "rep_id": "SALE-01",
+      "industries": [
+        "Sản xuất",
+        "Xây dựng",
+        "Cơ khí"
+      ],
+      "region": [
+        "Miền Bắc"
+      ],
+      "assigned_leads_count": 2,
+      "p1_hot": 2,
+      "p2_warm": 0,
+      "p3_cold": 0
+    },
+    "Trần Thị Bình": {
+      "rep_id": "SALE-02",
+      "industries": [
+        "Bán lẻ",
+        "Thương mại điện tử",
+        "Thời trang"
+      ],
+      "region": [
+        "Miền Bắc"
+      ],
+      "assigned_leads_count": 3,
+      "p1_hot": 3,
+      "p2_warm": 0,
+      "p3_cold": 0
+    },
+    "Lê Hoàng Cường": {
+      "rep_id": "SALE-03",
+      "industries": [
+        "F&B",
+        "Khách sạn",
+        "Dịch vụ"
+      ],
+      "region": [
+        "Miền Bắc"
+      ],
+      "assigned_leads_count": 1,
+      "p1_hot": 1,
+      "p2_warm": 0,
+      "p3_cold": 0
+    },
+    "Phạm Thu Dung": {
+      "rep_id": "SALE-04",
+      "industries": [
+        "Logistics",
+        "Vận tải",
+        "Kho bãi",
+        "Phân phối"
+      ],
+      "region": [
+        "Miền Trung",
+        "Toàn quốc"
+      ],
+      "assigned_leads_count": 1,
+      "p1_hot": 1,
+      "p2_warm": 0,
+      "p3_cold": 0
+    },
+    "Hoàng Minh Đức": {
+      "rep_id": "SALE-05",
+      "industries": [
+        "Sản xuất",
+        "Xây dựng",
+        "Vật liệu xây dựng"
+      ],
+      "region": [
+        "Miền Nam"
+      ],
+      "assigned_leads_count": 1,
+      "p1_hot": 1,
+      "p2_warm": 0,
+      "p3_cold": 0
+    },
+    "Đỗ Mai Hoa": {
+      "rep_id": "SALE-06",
+      "industries": [
+        "Bán lẻ",
+        "Chuỗi cửa hàng",
+        "Mỹ phẩm",
+        "Thương mại điện tử"
+      ],
+      "region": [
+        "Miền Nam"
+      ],
+      "assigned_leads_count": 1,
+      "p1_hot": 1,
+      "p2_warm": 0,
+      "p3_cold": 0
+    },
+    "Vũ Quốc Hùng": {
+      "rep_id": "SALE-07",
+      "industries": [
+        "Dịch vụ",
+        "Giáo dục",
+        "Y tế",
+        "Công nghệ"
+      ],
+      "region": [
+        "Miền Nam"
+      ],
+      "assigned_leads_count": 2,
+      "p1_hot": 1,
+      "p2_warm": 0,
+      "p3_cold": 0
+    },
+    "Đặng Thùy Linh": {
+      "rep_id": "SALE-08",
+      "industries": [
+        "F&B",
+        "Nông sản",
+        "Dịch vụ tổng hợp"
+      ],
+      "region": [
+        "Miền Trung",
+        "Miền Nam",
+        "Toàn quốc"
+      ],
+      "assigned_leads_count": 2,
+      "p1_hot": 2,
+      "p2_warm": 0,
+      "p3_cold": 0
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "SALE-01": [
+    {
+      "task_id": "TASK-CUST-NV-0003-SALE-01",
+      "customer_id": "CUST-NV-0003",
+      "company_name": "Xưởng May Thêu An Thịnh",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Nguyễn Thị Lan",
+      "contact_phone": "0918112233",
+      "contact_email": "",
+      "inquired_needs": "Cần tìm phần mềm quản lý kho vải sợi, theo dõi tiến độ đơn hàng may và định mức vải",
+      "missing_info": [
+        "Ngân sách dự kiến",
+        "Email liên hệ chính thức"
+      ],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Nguyễn Thị Lan (0918112233) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet ERP SMB dành riêng cho Xưởng May Thêu An Thịnh",
+      "outreach_draft_body": "Kính gửi Chủ xưởng may Nguyễn Thị Lan,\n\nEm là Nguyễn Văn An - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Xưởng May Thêu An Thịnh đang có nhu cầu tối ưu hóa vận hành thông qua NamViet ERP SMB, đặc biệt trong việc Cần tìm phần mềm quản lý kho vải sợi, theo dõi tiến độ đơn hàng may và định mức vải.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Sản xuất và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Xưởng May Thêu An Thịnh.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nNguyễn Văn An | Nam Việt Software\nHotline: 0912111001",
+      "discovery_questions": [
+        "Quý doanh nghiệp dự kiến mức ngân sách đầu tư cho dự án phần mềm này trong khoảng nào để Nam Việt thiết kế gói phù hợp?",
+        "Anh/Chị vui lòng chia sẻ thêm địa chỉ Email làm việc chính thức để Nam Việt gửi trọn bộ tài liệu giải pháp và demo?"
+      ]
+    },
+    {
+      "task_id": "TASK-CUST-NV-0007-SALE-01",
+      "customer_id": "CUST-NV-0007",
+      "company_name": "Công ty TNHH Cơ Khí & Chế Tạo Tân Phát",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Đặng Quốc Hưng",
+      "contact_phone": "+84 912 334 455",
+      "contact_email": "hung.dq@tanphatmech.com.vn",
+      "inquired_needs": "Hệ thống ERP sản xuất, quản lý định mức BOM, đơn hàng cơ khí và tiến độ xưởng",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Đặng Quốc Hưng (+84 912 334 455) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet ERP SMB dành riêng cho Công ty TNHH Cơ Khí & Chế Tạo Tân Phát",
+      "outreach_draft_body": "Kính gửi Tổng Giám Đốc Đặng Quốc Hưng,\n\nEm là Nguyễn Văn An - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Công ty TNHH Cơ Khí & Chế Tạo Tân Phát đang có nhu cầu tối ưu hóa vận hành thông qua NamViet ERP SMB, đặc biệt trong việc Hệ thống ERP sản xuất, quản lý định mức BOM, đơn hàng cơ khí và tiến độ xưởng.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Sản xuất và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Công ty TNHH Cơ Khí & Chế Tạo Tân Phát.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nNguyễn Văn An | Nam Việt Software\nHotline: 0912111001",
+      "discovery_questions": []
+    }
+  ],
+  "SALE-02": [
+    {
+      "task_id": "TASK-CUST-NV-0001-SALE-02",
+      "customer_id": "CUST-NV-0001",
+      "company_name": "Công ty Cổ phần Công nghệ Nam Long",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Nguyễn Văn Thành",
+      "contact_phone": "0903456789",
+      "contact_email": "thanh.nguyen@namlongtech.vn",
+      "inquired_needs": "Phần mềm CRM quản lý bán hàng và đội ngũ telesale | Phần mềm chấm công, tính lương và đánh giá KPI nhân sự (HRM) | Cần bảng báo giá phần mềm quản lý bán hàng",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Nguyễn Văn Thành (0903456789) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet CRM Pro dành riêng cho Công ty Cổ phần Công nghệ Nam Long",
+      "outreach_draft_body": "Kính gửi Giám đốc Kinh doanh Nguyễn Văn Thành,\n\nEm là Trần Thị Bình - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Công ty Cổ phần Công nghệ Nam Long đang có nhu cầu tối ưu hóa vận hành thông qua NamViet CRM Pro, đặc biệt trong việc Phần mềm CRM quản lý bán hàng và đội ngũ telesale | Phần mềm chấm công, tính lương và đánh giá KPI nhân sự (HRM) | Cần bảng báo giá phần mềm quản lý bán hàng.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Bán lẻ và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Công ty Cổ phần Công nghệ Nam Long.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nTrần Thị Bình | Nam Việt Software\nHotline: 0912111002",
+      "discovery_questions": []
+    },
+    {
+      "task_id": "TASK-CUST-NV-0008-SALE-02",
+      "customer_id": "CUST-NV-0008",
+      "company_name": "Chuỗi Cửa Hàng Thời Trang Bimi",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Bùi Mai Bích",
+      "contact_phone": "0938 123 456",
+      "contact_email": "bimi.fashion@gmail.com",
+      "inquired_needs": "Phần mềm quản lý bán hàng đa kênh POS & CRM tích hợp fanpage, sàn Shopee/TikTok",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Bùi Mai Bích (0938 123 456) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet CRM Pro dành riêng cho Chuỗi Cửa Hàng Thời Trang Bimi",
+      "outreach_draft_body": "Kính gửi Chủ thương hiệu Bùi Mai Bích,\n\nEm là Trần Thị Bình - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Chuỗi Cửa Hàng Thời Trang Bimi đang có nhu cầu tối ưu hóa vận hành thông qua NamViet CRM Pro, đặc biệt trong việc Phần mềm quản lý bán hàng đa kênh POS & CRM tích hợp fanpage, sàn Shopee/TikTok.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Bán lẻ và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Chuỗi Cửa Hàng Thời Trang Bimi.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nTrần Thị Bình | Nam Việt Software\nHotline: 0912111002",
+      "discovery_questions": []
+    },
+    {
+      "task_id": "TASK-CUST-NV-0016-SALE-02",
+      "customer_id": "CUST-NV-0016",
+      "company_name": "Công ty TNHH Thương mại Minh Khang",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Lê Minh Khang",
+      "contact_phone": "0934556677",
+      "contact_email": "khang@minhkhangtrade.vn",
+      "inquired_needs": "Phần mềm CRM",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Lê Minh Khang (0934556677) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet CRM Pro dành riêng cho Công ty TNHH Thương mại Minh Khang",
+      "outreach_draft_body": "Kính gửi Giám đốc Lê Minh Khang,\n\nEm là Trần Thị Bình - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Công ty TNHH Thương mại Minh Khang đang có nhu cầu tối ưu hóa vận hành thông qua NamViet CRM Pro, đặc biệt trong việc Phần mềm CRM.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Bán lẻ và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Công ty TNHH Thương mại Minh Khang.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nTrần Thị Bình | Nam Việt Software\nHotline: 0912111002",
+      "discovery_questions": []
+    }
+  ],
+  "SALE-03": [
+    {
+      "task_id": "TASK-CUST-NV-0006-SALE-03",
+      "customer_id": "CUST-NV-0006",
+      "company_name": "Tập đoàn Đại Dương Xanh",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Hoàng Hải Yến",
+      "contact_phone": "0909999888",
+      "contact_email": "yen.hoang@daiduongxanh.com",
+      "inquired_needs": "Giải pháp ERP quản lý tổng thể chuỗi 15 nhà hàng hải sản và 3 khu resort trên toàn quốc",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Hoàng Hải Yến (0909999888) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet ERP SMB dành riêng cho Tập đoàn Đại Dương Xanh",
+      "outreach_draft_body": "Kính gửi Giám đốc Vận hành Chuỗi Hoàng Hải Yến,\n\nEm là Lê Hoàng Cường - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Tập đoàn Đại Dương Xanh đang có nhu cầu tối ưu hóa vận hành thông qua NamViet ERP SMB, đặc biệt trong việc Giải pháp ERP quản lý tổng thể chuỗi 15 nhà hàng hải sản và 3 khu resort trên toàn quốc.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành F&B và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Tập đoàn Đại Dương Xanh.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nLê Hoàng Cường | Nam Việt Software\nHotline: 0912111003",
+      "discovery_questions": []
+    }
+  ],
+  "SALE-04": [
+    {
+      "task_id": "TASK-CUST-NV-0010-SALE-04",
+      "customer_id": "CUST-NV-0010",
+      "company_name": "Công ty Cổ phần Vận tải Biển Miền Trung (CentralShip)",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Hồ Bá Thông",
+      "contact_phone": "0913556677",
+      "contact_email": "thong.hb@centralship.com.vn",
+      "inquired_needs": "Hệ thống quản lý kho vận chuyển container, theo dõi công nợ khách hàng và báo cáo tài chính",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Hồ Bá Thông (0913556677) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet CRM Pro dành riêng cho Công ty Cổ phần Vận tải Biển Miền Trung (CentralShip)",
+      "outreach_draft_body": "Kính gửi Trưởng phòng Khai thác Hàng hải Hồ Bá Thông,\n\nEm là Phạm Thu Dung - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Công ty Cổ phần Vận tải Biển Miền Trung (CentralShip) đang có nhu cầu tối ưu hóa vận hành thông qua NamViet CRM Pro, đặc biệt trong việc Hệ thống quản lý kho vận chuyển container, theo dõi công nợ khách hàng và báo cáo tài chính.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Logistics và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Công ty Cổ phần Vận tải Biển Miền Trung (CentralShip).\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nPhạm Thu Dung | Nam Việt Software\nHotline: 0912111004",
+      "discovery_questions": []
+    }
+  ],
+  "SALE-05": [
+    {
+      "task_id": "TASK-CUST-NV-0011-SALE-05",
+      "customer_id": "CUST-NV-0011",
+      "company_name": "Công ty TNHH Nhựa & Bao Bì Toàn Thắng",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Trịnh Hoài Nam",
+      "contact_phone": "0908 667 788",
+      "contact_email": "nam.th@toanthangplastic.com",
+      "inquired_needs": "Phần mềm ERP quản lý sản xuất nhựa ép, kho nguyên vật liệu hạt nhựa và kế toán chi phí",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Trịnh Hoài Nam (0908 667 788) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet ERP SMB dành riêng cho Công ty TNHH Nhựa & Bao Bì Toàn Thắng",
+      "outreach_draft_body": "Kính gửi Giám đốc Sản xuất Trịnh Hoài Nam,\n\nEm là Hoàng Minh Đức - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Công ty TNHH Nhựa & Bao Bì Toàn Thắng đang có nhu cầu tối ưu hóa vận hành thông qua NamViet ERP SMB, đặc biệt trong việc Phần mềm ERP quản lý sản xuất nhựa ép, kho nguyên vật liệu hạt nhựa và kế toán chi phí.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Sản xuất và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Công ty TNHH Nhựa & Bao Bì Toàn Thắng.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nHoàng Minh Đức | Nam Việt Software\nHotline: 0912111005",
+      "discovery_questions": []
+    }
+  ],
+  "SALE-06": [
+    {
+      "task_id": "TASK-CUST-NV-0012-SALE-06",
+      "customer_id": "CUST-NV-0012",
+      "company_name": "Chuỗi Mỹ Phẩm Organic Sài Gòn",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Ngô Thùy Trang",
+      "contact_phone": "0902 998 877",
+      "contact_email": "trangngo@saigonorganic.vn",
+      "inquired_needs": "Hệ thống CRM quản lý 80.000 khách hàng thân thiết, tích điểm đổi quà và marketing automation",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Ngô Thùy Trang (0902 998 877) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet CRM Pro dành riêng cho Chuỗi Mỹ Phẩm Organic Sài Gòn",
+      "outreach_draft_body": "Kính gửi CEO & Founder Ngô Thùy Trang,\n\nEm là Đỗ Mai Hoa - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Chuỗi Mỹ Phẩm Organic Sài Gòn đang có nhu cầu tối ưu hóa vận hành thông qua NamViet CRM Pro, đặc biệt trong việc Hệ thống CRM quản lý 80.000 khách hàng thân thiết, tích điểm đổi quà và marketing automation.\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Bán lẻ và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Chuỗi Mỹ Phẩm Organic Sài Gòn.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nĐỗ Mai Hoa | Nam Việt Software\nHotline: 0912111006",
+      "discovery_questions": []
+    }
+  ],
+  "SALE-07": [
+    {
+      "task_id": "TASK-CUST-NV-0002-SALE-07",
+      "customer_id": "CUST-NV-0002",
+      "company_name": "Tập đoàn Đầu tư Alpha",
+      "priority": "OUT_OF_SCOPE",
+      "priority_label": "Không phù hợp (Ngoài phạm vi sản phẩm)",
+      "contact_person": "Vũ Đức Đam",
+      "contact_phone": "0945678901",
+      "contact_email": "dam.vu@alphacorp.vn",
+      "inquired_needs": "Cần thuê đội ngũ gia công phần mềm nhúng điều khiển thiết bị bay Drone và IoT công nghiệp",
+      "missing_info": [],
+      "next_action": "Lưu hồ sơ đối tác tiềm năng, không đưa vào KPI gọi bán lẻ.",
+      "outreach_draft_subject": "[Nam Việt] Thư cảm ơn và phản hồi thông tin tư vấn kỹ thuật",
+      "outreach_draft_body": "Kính gửi Phó Tổng Giám đốc Vũ Đức Đam,\n\nNam Việt Software trân trọng cảm ơn Anh/Chị và Tập đoàn Đầu tư Alpha đã quan tâm liên hệ.\n\nSau khi đánh giá yêu cầu (Cần thuê đội ngũ gia công phần mềm nhúng điều khiển thiết bị bay Drone và IoT công nghiệp), bộ phận kỹ thuật Nam Việt nhận thấy nhu cầu của đơn vị mình thuộc lĩnh vực chuyên biệt ngoài phạm vi các sản phẩm quản trị SME chuẩn của chúng em. Để đảm bảo chất lượng dự án tốt nhất cho Tập đoàn Đầu tư Alpha, chúng em xin phép ghi nhận và sẽ kết nối Anh/Chị với đối tác chuyên môn phù hợp trong mạng lưới liên minh chuyển đổi số.\n\nTrân trọng,\nBan Tư vấn Giải pháp - Nam Việt Software",
+      "discovery_questions": []
+    },
+    {
+      "task_id": "TASK-CUST-NV-0013-SALE-07",
+      "customer_id": "CUST-NV-0013",
+      "company_name": "Hệ Thống Phòng Khám Nha Khoa Tâm Đức",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Bác sĩ Nguyễn Hoài Đức",
+      "contact_phone": "0915 223 344",
+      "contact_email": "dr.duc@tamducdental.vn",
+      "inquired_needs": "Hệ thống phần mềm quản lý hồ sơ bệnh nhân, lịch hẹn khám và KPI hoa hồng bác sĩ (CRM + HRM)",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Bác sĩ Nguyễn Hoài Đức (0915 223 344) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet CRM Pro dành riêng cho Hệ Thống Phòng Khám Nha Khoa Tâm Đức",
+      "outreach_draft_body": "Kính gửi Chủ tịch HĐQT Bác sĩ Nguyễn Hoài Đức,\n\nEm là Vũ Quốc Hùng - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Hệ Thống Phòng Khám Nha Khoa Tâm Đức đang có nhu cầu tối ưu hóa vận hành thông qua NamViet CRM Pro, đặc biệt trong việc Hệ thống phần mềm quản lý hồ sơ bệnh nhân, lịch hẹn khám và KPI hoa hồng bác sĩ (CRM + HRM).\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành Y tế và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Hệ Thống Phòng Khám Nha Khoa Tâm Đức.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nVũ Quốc Hùng | Nam Việt Software\nHotline: 0912111007",
+      "discovery_questions": []
+    }
+  ],
+  "SALE-08": [
+    {
+      "task_id": "TASK-CUST-NV-0009-SALE-08",
+      "customer_id": "CUST-NV-0009",
+      "company_name": "Khách Sạn & Nhà Hàng Sen Vàng",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Vũ Văn Lộc",
+      "contact_phone": "0977889900",
+      "contact_email": "loc.vu@goldenlotushotel.vn",
+      "inquired_needs": "Phần mềm quản lý đặt bàn, phòng khách sạn và tính lương cho nhân viên ca kíp (HRM + F&B)",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Vũ Văn Lộc (0977889900) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet HRM Cloud dành riêng cho Khách Sạn & Nhà Hàng Sen Vàng",
+      "outreach_draft_body": "Kính gửi Giám đốc khách sạn Vũ Văn Lộc,\n\nEm là Đặng Thùy Linh - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Khách Sạn & Nhà Hàng Sen Vàng đang có nhu cầu tối ưu hóa vận hành thông qua NamViet HRM Cloud, đặc biệt trong việc Phần mềm quản lý đặt bàn, phòng khách sạn và tính lương cho nhân viên ca kíp (HRM + F&B).\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành F&B và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Khách Sạn & Nhà Hàng Sen Vàng.\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nĐặng Thùy Linh | Nam Việt Software\nHotline: 0912111008",
+      "discovery_questions": []
+    },
+    {
+      "task_id": "TASK-CUST-NV-0014-SALE-08",
+      "customer_id": "CUST-NV-0014",
+      "company_name": "Chuỗi Trà Sữa Đô Thị (Urban Tea)",
+      "priority": "P1",
+      "priority_label": "P1 - Rất tiềm năng (Hot Lead)",
+      "contact_person": "Lê Bá Duy",
+      "contact_phone": "0972 334 455",
+      "contact_email": "duy.le@urbantea.vn",
+      "inquired_needs": "Phần mềm chấm công vân tay, ca kíp linh hoạt cho nhân viên phục vụ sinh viên (HRM Cloud)",
+      "missing_info": [],
+      "next_action": "Gọi điện xác nhận lịch hẹn Demo 1-1 với Lê Bá Duy (0972 334 455) trong vòng 2 giờ.",
+      "outreach_draft_subject": "[Nam Việt] Thư mời trải nghiệm Demo Giải pháp NamViet HRM Cloud dành riêng cho Chuỗi Trà Sữa Đô Thị (Urban Tea)",
+      "outreach_draft_body": "Kính gửi Quản lý Vận hành Lê Bá Duy,\n\nEm là Đặng Thùy Linh - Chuyên viên Tư vấn Giải pháp Quản trị Doanh nghiệp tại Nam Việt Software.\nĐược biết Chuỗi Trà Sữa Đô Thị (Urban Tea) đang có nhu cầu tối ưu hóa vận hành thông qua NamViet HRM Cloud, đặc biệt trong việc Phần mềm chấm công vân tay, ca kíp linh hoạt cho nhân viên phục vụ sinh viên (HRM Cloud).\n\nNam Việt đã đồng hành cùng nhiều doanh nghiệp trong ngành F&B và giúp nâng cao 35% hiệu suất quản lý. Em trân trọng kính mời Anh/Chị một buổi chia sẻ ngắn (khoảng 30 phút trực tiếp hoặc online) để đội ngũ chuyên gia Nam Việt trình bày trực tiếp mô hình ứng dụng thực tế trên quy mô của Chuỗi Trà Sữa Đô Thị (Urban Tea).\n\nAnh/Chị thuận tiện vào sáng thứ Năm hay chiều thứ Sáu tuần này để em sắp xếp lịch chuẩn bị chu đáo nhất ạ?\n\nTrân trọng,\nĐặng Thùy Linh | Nam Việt Software\nHotline: 0912111008",
+      "discovery_questions": []
+    }
+  ]
+}

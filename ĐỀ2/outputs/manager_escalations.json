@@ -1,0 +1,126 @@
+[
+  {
+    "customer_id": "CUST-NV-0002",
+    "company_name": "Tập đoàn Đầu tư Alpha",
+    "industry": "Công nghệ",
+    "city": "TP. Hồ Chí Minh",
+    "budget": 2500000000,
+    "needs": "Cần thuê đội ngũ gia công phần mềm nhúng điều khiển thiết bị bay Drone và IoT công nghiệp",
+    "contacts": [
+      {
+        "name": "Vũ Đức Đam",
+        "title": "Phó Tổng Giám đốc",
+        "phone": "0945678901",
+        "email": "dam.vu@alphacorp.vn",
+        "source": "Hội thảo Chuyển đổi số"
+      }
+    ],
+    "escalation_reasons": [
+      {
+        "code": "HIGH_BUDGET_UNCLEAR_REQUIREMENTS",
+        "message": "Ngân sách lớn (2,500,000,000 VNĐ) nhưng yêu cầu phạm vi chưa rõ ràng hoặc thiếu thông số kỹ thuật then chốt."
+      },
+      {
+        "code": "OUT_OF_SCOPE_POTENTIAL_CUSTOM",
+        "message": "Yêu cầu nằm ngoài giải pháp đóng gói chuẩn của Nam Việt nhưng ngân sách rất cao (2,500,000,000 VNĐ), cần xem xét chuyển giao đối tác hệ sinh thái."
+      }
+    ],
+    "recommended_action": "Trưởng phòng Kinh doanh xem xét trực tiếp và phê duyệt phương án tiếp cận."
+  },
+  {
+    "customer_id": "CUST-NV-0006",
+    "company_name": "Tập đoàn Đại Dương Xanh",
+    "industry": "F&B",
+    "city": "Đa chi nhánh (Hà Nội, Đà Nẵng, TP.HCM)",
+    "budget": 350000000,
+    "needs": "Giải pháp ERP quản lý tổng thể chuỗi 15 nhà hàng hải sản và 3 khu resort trên toàn quốc",
+    "contacts": [
+      {
+        "name": "Hoàng Hải Yến",
+        "title": "Giám đốc Vận hành Chuỗi",
+        "phone": "0909999888",
+        "email": "yen.hoang@daiduongxanh.com",
+        "source": "Hội thảo SME 2026"
+      }
+    ],
+    "escalation_reasons": [
+      {
+        "code": "MULTI_REGION_ENTERPRISE",
+        "message": "Doanh nghiệp quy mô lớn hoạt động đa chi nhánh (Đa chi nhánh (Hà Nội, Đà Nẵng, TP.HCM)), cần Trưởng phòng chỉ định tổ công tác liên vùng."
+      }
+    ],
+    "recommended_action": "Trưởng phòng Kinh doanh xem xét trực tiếp và phê duyệt phương án tiếp cận."
+  },
+  {
+    "customer_id": "CUST-NV-0015",
+    "company_name": "Hợp tác xã Nông sản Hữu cơ Mộc Châu",
+    "industry": "Nông nghiệp",
+    "city": "Sơn La",
+    "budget": 15000000,
+    "needs": "Cần phần mềm kế toán hợp tác xã và xuất hóa đơn theo thông tư mới",
+    "contacts": [
+      {
+        "name": "Hà Văn Mừng",
+        "title": "Chủ nhiệm HTX",
+        "phone": "0984 665 544",
+        "email": "htx.mocchau@gmail.com",
+        "source": "Website Form"
+      }
+    ],
+    "escalation_reasons": [
+      {
+        "code": "NO_MATCHING_SALES_REP",
+        "message": "Chưa có nhân sự phụ trách phù hợp cho ngành 'Nông nghiệp' tại khu vực 'Sơn La'. Đưa vào danh sách Trưởng phòng quyết định."
+      }
+    ],
+    "recommended_action": "Trưởng phòng chỉ định nhân sự phù hợp cho khu vực/ngành này."
+  },
+  {
+    "customer_id": "CUST-NV-0017",
+    "company_name": "Cửa hàng Phụ tùng Ô tô Hùng Dũng",
+    "industry": "Bán lẻ",
+    "city": "Chưa xác định",
+    "budget": null,
+    "needs": "Cần quản lý phụ tùng ô tô",
+    "contacts": [
+      {
+        "name": "Anh Dũng",
+        "title": "Chủ cửa hàng",
+        "phone": "0912999111",
+        "email": "",
+        "source": "Website Form"
+      }
+    ],
+    "escalation_reasons": [
+      {
+        "code": "NO_MATCHING_SALES_REP",
+        "message": "Chưa có nhân sự phụ trách phù hợp cho ngành 'Bán lẻ' tại khu vực 'Chưa xác định'. Đưa vào danh sách Trưởng phòng quyết định."
+      }
+    ],
+    "recommended_action": "Trưởng phòng chỉ định nhân sự phù hợp cho khu vực/ngành này."
+  },
+  {
+    "customer_id": "CUST-NV-0018",
+    "company_name": "Tập đoàn Minh Anh",
+    "industry": "Bất động sản",
+    "city": "Hà Nội",
+    "budget": 120000000,
+    "needs": "Tư vấn lại gói CRM Quản lý dự án bất động sản",
+    "contacts": [
+      {
+        "name": "Nguyễn Hoàng Minh",
+        "title": "Chủ tịch",
+        "phone": "0918776655",
+        "email": "contact@minhanhgroup.vn",
+        "source": "Website Form"
+      }
+    ],
+    "escalation_reasons": [
+      {
+        "code": "PREVIOUS_COMPLAINT_HISTORY",
+        "message": "Khách hàng có lịch sử khiếu nại trước đó: Khách hàng từng khiếu nại báo giá lần trước thiếu minh bạch, cần Trưởng phòng Kinh doanh xem xét trước khi tiếp cận lại."
+      }
+    ],
+    "recommended_action": "Trưởng phòng Kinh doanh xem xét trực tiếp và phê duyệt phương án tiếp cận."
+  }
+]

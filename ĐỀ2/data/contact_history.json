@@ -1,0 +1,35 @@
+[
+  {
+    "phone": "0903112233",
+    "email": "tung.lam@vietphatlogistics.com",
+    "company_name": "Công ty TNHH Vận Tải Việt Phát",
+    "status": "DO_NOT_CONTACT",
+    "last_contact_date": "2026-10-15",
+    "notes": "Khách hàng phàn nàn bị nhiều nhân viên gọi làm phiền, yêu cầu xóa vĩnh viễn khỏi danh sách tiếp thị."
+  },
+  {
+    "phone": "0988223344",
+    "email": "ceo@saigonretail.vn",
+    "company_name": "Công ty Cổ phần Bán lẻ Sài Gòn",
+    "status": "ACTIVE_CLIENT",
+    "last_contact_date": "2026-09-01",
+    "notes": "Đã ký hợp đồng gói NamViet ERP SMB & CRM Pro thời hạn 3 năm. Đang vận hành ổn định, chuyển cho Account Manager."
+  },
+  {
+    "phone": "0977445566",
+    "email": "lienhe@gialocdecor.com",
+    "company_name": "Công ty TNHH Nội Thất Gia Lộc",
+    "status": "CALL_BACK_LATER",
+    "last_contact_date": "2026-11-05",
+    "notes": "Giám đốc đi công tác nước ngoài, hẹn liên hệ lại vào đầu tháng 12/2026."
+  },
+  {
+    "phone": "0918776655",
+    "email": "contact@minhanhgroup.vn",
+    "company_name": "Tập đoàn Minh Anh",
+    "status": "COMPLAINT_PENDING",
+    "last_contact_date": "2026-10-20",
+    "notes": "Khách hàng từng khiếu nại báo giá lần trước thiếu minh bạch, cần Trưởng phòng Kinh doanh xem xét trước khi tiếp cận lại."
+  }
+]
+

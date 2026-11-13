@@ -1,0 +1,91 @@
+[
+  {
+    "rep_id": "SALE-01",
+    "name": "Nguyễn Văn An",
+    "email": "an.nguyen@namviet-software.vn",
+    "phone": "0912111001",
+    "industries": ["Sản xuất", "Xây dựng", "Cơ khí"],
+    "regions": ["Miền Bắc"],
+    "provinces": ["Hà Nội", "Hải Phòng", "Quảng Ninh", "Bắc Ninh", "Vĩnh Phúc", "Hải Dương", "Hưng Yên", "Hà Nam", "Nam Định", "Thái Bình"],
+    "max_capacity": 50,
+    "current_load": 0
+  },
+  {
+    "rep_id": "SALE-02",
+    "name": "Trần Thị Bình",
+    "email": "binh.tran@namviet-software.vn",
+    "phone": "0912111002",
+    "industries": ["Bán lẻ", "Thương mại điện tử", "Thời trang"],
+    "regions": ["Miền Bắc"],
+    "provinces": ["Hà Nội", "Hải Phòng", "Quảng Ninh", "Bắc Ninh", "Vĩnh Phúc", "Hải Dương", "Hưng Yên", "Hà Nam", "Nam Định", "Thái Bình"],
+    "max_capacity": 50,
+    "current_load": 0
+  },
+  {
+    "rep_id": "SALE-03",
+    "name": "Lê Hoàng Cường",
+    "email": "cuong.le@namviet-software.vn",
+    "phone": "0912111003",
+    "industries": ["F&B", "Khách sạn", "Dịch vụ"],
+    "regions": ["Miền Bắc"],
+    "provinces": ["Hà Nội", "Hải Phòng", "Quảng Ninh", "Bắc Ninh", "Vĩnh Phúc", "Hải Dương", "Hưng Yên", "Hà Nam", "Nam Định", "Thái Bình", "Lào Cai"],
+    "max_capacity": 50,
+    "current_load": 0
+  },
+  {
+    "rep_id": "SALE-04",
+    "name": "Phạm Thu Dung",
+    "email": "dung.pham@namviet-software.vn",
+    "phone": "0912111004",
+    "industries": ["Logistics", "Vận tải", "Kho bãi", "Phân phối"],
+    "regions": ["Miền Trung", "Toàn quốc"],
+    "provinces": ["Đà Nẵng", "Huế", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Khánh Hòa", "Nghệ An", "Hà Tĩnh", "Thanh Hóa"],
+    "max_capacity": 45,
+    "current_load": 0
+  },
+  {
+    "rep_id": "SALE-05",
+    "name": "Hoàng Minh Đức",
+    "email": "duc.hoang@namviet-software.vn",
+    "phone": "0912111005",
+    "industries": ["Sản xuất", "Xây dựng", "Vật liệu xây dựng"],
+    "regions": ["Miền Nam"],
+    "provinces": ["TP. Hồ Chí Minh", "TP.HCM", "Bình Dương", "Đồng Nai", "Long An", "Bà Rịa - Vũng Tàu", "Tây Ninh", "Cần Thơ"],
+    "max_capacity": 55,
+    "current_load": 0
+  },
+  {
+    "rep_id": "SALE-06",
+    "name": "Đỗ Mai Hoa",
+    "email": "hoa.do@namviet-software.vn",
+    "phone": "0912111006",
+    "industries": ["Bán lẻ", "Chuỗi cửa hàng", "Mỹ phẩm", "Thương mại điện tử"],
+    "regions": ["Miền Nam"],
+    "provinces": ["TP. Hồ Chí Minh", "TP.HCM", "Bình Dương", "Đồng Nai", "Long An", "Bà Rịa - Vũng Tàu", "Cần Thơ", "Tiền Giang"],
+    "max_capacity": 50,
+    "current_load": 0
+  },
+  {
+    "rep_id": "SALE-07",
+    "name": "Vũ Quốc Hùng",
+    "email": "hung.vu@namviet-software.vn",
+    "phone": "0912111007",
+    "industries": ["Dịch vụ", "Giáo dục", "Y tế", "Công nghệ"],
+    "regions": ["Miền Nam"],
+    "provinces": ["TP. Hồ Chí Minh", "TP.HCM", "Bình Dương", "Đồng Nai", "Long An", "Cần Thơ"],
+    "max_capacity": 50,
+    "current_load": 0
+  },
+  {
+    "rep_id": "SALE-08",
+    "name": "Đặng Thùy Linh",
+    "email": "linh.dang@namviet-software.vn",
+    "phone": "0912111008",
+    "industries": ["F&B", "Nông sản", "Dịch vụ tổng hợp"],
+    "regions": ["Miền Trung", "Miền Nam", "Toàn quốc"],
+    "provinces": ["Đà Nẵng", "Khánh Hòa", "Lâm Đồng", "Đắk Lắk", "Gia Lai", "TP. Hồ Chí Minh"],
+    "max_capacity": 50,
+    "current_load": 0
+  }
+]
+
